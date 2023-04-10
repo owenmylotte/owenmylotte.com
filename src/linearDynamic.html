@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Modify the link to be a button with .simulation-button class -->
+<button class="simulation-button" onclick="window.location.href='home.html'">Back to Homepage</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring-Mass-Damper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:#423f45;">
+
+<h1>Linear Elastic Systems</h1>
+<p style="max-width: 1000px; font-size: 20px; text-align: left; margin: 0 auto;">Linear dynamics is a branch of
+    mechanics that deals with the study of the motion of objects and systems under the
+    influence of external forces. It provides a mathematical framework to predict the behavior of systems when subjected
+    to time-varying loads, vibrations, and other dynamic phenomena. Linear dynamics assumes that the motion of systems
+    can be modeled by linear equations, meaning that the response of the system is proportional to the applied
+    forces.</p>
+<div class="canvas-container">
+    <canvas id="plotCanvas" width="800" height="200"></canvas>
+    <canvas id="simulationCanvas" width="800" height="400"></canvas>
+</div>
+
+<div id="controls">
+    <label for="mass">Mass (kg):</label>
+    <input type="number" id="mass" step="0.1" value="1">
+    <label for="springConstant">Spring Constant (N/m):</label>
+    <input type="number" id="springConstant" step="0.1" value="10">
+    <label for="damping">Damping (N s/m):</label>
+    <input type="number" id="damping" step="0.1" value="2">
+    <button id="startSimulation">Start Simulation</button>
+</div>
+<script src="simulation.js"></script>
+</body>
+</html>
