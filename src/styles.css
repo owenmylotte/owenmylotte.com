@@ -25,6 +25,7 @@
     padding: 20px;
     border-radius: 5px;
     background-color: #4f4b52;
+    width: 200px; /* Set a fixed width */
 }
 
 .simulation-button img {
@@ -45,9 +46,22 @@ h2 {
     text-align: center;
 }
 
-/* Set equal width for the buttons and allow text to span multiple lines */
-.simulation-button {
+.menu-button {
     width: 200px; /* Set a fixed width */
+    height: 80px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #4f4b52;
+    font-size: 20px;
+}
+.menu-button:hover {
+    background-color: #948d99;
 }
 
 /* Style the spring icon as a grey box */
@@ -101,10 +115,27 @@ button.simulation-button {
     align-items: center;
 }
 
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333;
+    box-sizing: border-box;
+}
+
 canvas {
     margin: 10px;
 }
 
 #flowCanvas {
     border: 1px solid black;
+}
+
+.body-paragraph {
+    max-width: 1000px;
+    font-size: 20px;
+    text-align: left;
+    margin: 50px auto;
 }
