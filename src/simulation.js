@@ -19,6 +19,7 @@ startSimulationButton.addEventListener('click', () => {
     }
     t = 0;
     animate();
+//     Add buttons to apply specific forces in the middle of the simulation instead of restarting it.
 });
 
 function animate() {

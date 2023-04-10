@@ -41,6 +41,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 /* Set equal width for the buttons and allow text to span multiple lines */
 .simulation-button {
     width: 200px; /* Set a fixed width */
