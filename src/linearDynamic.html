@@ -5,18 +5,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spring-Mass-Damper</title>
+    <title>Linear Elastic Systems</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body style="background-color:#423f45;">
 
-<h1>Linear Elastic Systems</h1>
-<p style="max-width: 1000px; font-size: 20px; text-align: left; margin: 0 auto;">Linear dynamics is a branch of
-    mechanics that deals with the study of the motion of objects and systems under the
-    influence of external forces. It provides a mathematical framework to predict the behavior of systems when subjected
-    to time-varying loads, vibrations, and other dynamic phenomena. Linear dynamics assumes that the motion of systems
-    can be modeled by linear equations, meaning that the response of the system is proportional to the applied
-    forces.</p>
+<h1>Linear Dynamic Systems</h1>
+<p style="max-width: 1000px; font-size: 20px; text-align: left; margin: 50px auto;">
+    An understanding of linear dynamics is fundamental.
+    Linear dynamic systems are used to model solid, fluid, thermal, and electrical systems. Therefore, the concepts
+    embedded in these second order differential equations are
+    Through these concepts, we can build a mathematical framework to model and predict the behavior of systems to any
+    conditions, including time-varying loads, vibrations, impulses, and more.
+    Linear dynamics assumes that the motion of systems
+    can be modeled by linear differential equations, meaning that the time derivatives of position are proportional
+    to the applied force.
+</p>
 <div class="canvas-container">
     <canvas id="plotCanvas" width="800" height="200"></canvas>
     <canvas id="simulationCanvas" width="800" height="400"></canvas>
@@ -29,8 +33,13 @@
     <input type="number" id="springConstant" step="0.1" value="10">
     <label for="damping">Damping (N s/m):</label>
     <input type="number" id="damping" step="0.1" value="2">
-    <button id="startSimulation">Start Simulation</button>
+    <button id="startSimulation">Start</button>
 </div>
 <script src="simulation.js"></script>
+
+<p style="max-width: 1000px; font-size: 20px; text-align: left; margin: 50px auto;">
+    How can we model this?
+</p>
+
 </body>
 </html>

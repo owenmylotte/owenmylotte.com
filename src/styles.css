@@ -100,3 +100,7 @@ button.simulation-button {
 canvas {
     margin: 10px;
 }
+
+#flowCanvas {
+    border: 1px solid black;
+}
